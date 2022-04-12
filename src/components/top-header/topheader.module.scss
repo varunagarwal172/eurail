@@ -6,13 +6,14 @@
     .logo-wrapper {
         width: 150px;
         float: left;
+
         img {
             width: 100%;
         }
     }
 
 
-    .additional-features  {
+    .additional-features {
         float: right;
         font-size: $small-font-size;
         cursor: pointer;

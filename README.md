@@ -12,9 +12,23 @@ This project was developed for the purpose of completion of assessment for the r
 7) Documentation has been provided as part of comments in the code itself.
 8) No Bootstrap or any other library has been used in developing the feature. Only for SASS has been used as css pre-processor.
 9) The application is running successfully on latest Chrome and Firefox.
-10) Achieved the same design to maintain consistency.
+10) Tried to implement the same design to maintain consistency.
 
+## Extra Features
+1) Delete Contact from the list. Since the deletion is not supported by the API, so it is being achieved at Front-end level.
+2) Select & Unselect all contacts for the active Tab.
+3) Bulk Deletion of Contacts based on individual selection or Select All for the active Tab.
+4) No. of records are also being updated in Tabs on deletion of any respective record.
+5) Pagination has been implemented for Previous & Next Page.
+6) Enhancement of Pagination by accepting the Page No. and/or No. of Records.
+7) Filter contacts by search text(will match the search text in first and last name).
+8) Add new record and edit current record can also be implemented, but didn't implement due to unavailability of APIs.
+9) We can use font-awesome or other libraries for better User Experience but as per description in the document, I didn't use any library.
 
+##Documentation
+
+Documentation for the Developers has been written in the code files.
+User Guide does not seem to be required because the app is very small scale.
 
 ## Available Scripts
 
