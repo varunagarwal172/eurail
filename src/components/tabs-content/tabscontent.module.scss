@@ -1,0 +1,49 @@
+@import "./src/style/variable";
+
+.tabs-content-wrapper {
+    background-color: $tabs-bg-color;
+    padding: 25px;
+
+    .tab-content {
+        margin: 0 10px;
+        border-bottom: 1px solid $tabs-border-color;
+        width: calc(50% - 20px);
+        display: inline-block;
+        position: relative;
+        z-index: 0;
+        background-color: transparent;
+        transition: ease background-color .5s;
+
+        &:hover {
+            background-color: $hover-bg-color;
+        }
+
+        &.active {
+            z-index: 1;
+            background-color: $hover-bg-color;
+
+            .contact-name {
+                cursor: default;
+            }
+        }
+
+        .contact-name {
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .tabs-content-wrapper {
+        .tab-content {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 421px) {
+    .tabs-content-wrapper {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,27 @@
+@import "./src/style/variable";
+
+.top-header {
+    padding: 20px 50px;
+
+    .logo-wrapper {
+        width: 150px;
+        float: left;
+        img {
+            width: 100%;
+        }
+    }
+
+
+    .additional-features  {
+        float: right;
+        font-size: $small-font-size;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .top-header {
+        padding: 20px;
+    }
+}
+

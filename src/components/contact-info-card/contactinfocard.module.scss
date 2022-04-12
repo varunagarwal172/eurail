@@ -1,0 +1,66 @@
+@import "./src/style/variable";
+
+.contact-info-card {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    min-width: 400px;
+    max-width: 500px;
+
+    .contact-image {
+        width: 100px;
+
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    .contact-info {
+        width: calc(100% - 100px);
+        padding: 0 15px;
+
+        .name {
+            color: $light-content-color;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .info-item {
+            margin-bottom: 5px;
+            font-size: $small-font-size;
+            display: flex;
+
+            .info-label {
+                font-weight: 600;
+                width: 80px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contact-info-card {
+        .contact-image {
+            width: 60px;
+        }
+
+        .contact-info {
+            width: calc(100% - 60px);
+            padding: 0 10px;
+
+            .name {
+                font-size: $regular-font-size;
+                margin-bottom: 10px;
+            }
+
+            .info-item {
+                .info-label {
+                    font-weight: 600;
+                    width: 60px;
+                    min-width: 60px;
+                }
+            }
+        }
+    }
+}

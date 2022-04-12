@@ -1,0 +1,20 @@
+@media screen and (max-width: 1024px) {
+    .main-body {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-body {
+        width: 100%;
+    }
+
+    .card {
+        padding: 20px 15px;
+
+        .ribbon {
+            right: 5px;
+            padding: 5px 3px;
+        }
+    }
+}
