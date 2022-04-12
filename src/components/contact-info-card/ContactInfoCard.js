@@ -8,6 +8,7 @@ class ContactInfoCard extends React.Component {
                 <i className={'close-icon'}
                    onClick={() => this.props.showCard('')}
                 />
+
                 <div className={`${style['contact-image']} no-select`}>
                     <img src={this.props.contactInfo.picture.medium} alt={this.props.contactInfo.name.first}/>
                 </div>

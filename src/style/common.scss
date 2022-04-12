@@ -122,3 +122,52 @@ ul, li {
 .no-select {
     user-select: none;
 }
+
+.action-btn {
+    cursor: pointer;
+    margin: 0 5px;
+    transition: ease all .3s;
+    &:hover {
+        color: $dark-content-color;
+        text-decoration: underline;
+    }
+}
+
+.primary-btn {
+    border: 1px solid $tabs-border-color;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+input[type='number'], input[type='search'], select {
+    padding: 5px 10px;
+    border: 1px solid $tabs-border-color;
+}
+
+button {
+    @extend .no-select;
+}
+
+[disabled] {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.hide {
+    display: none!important;
+}
+.text-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+label {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.pl-10-imp {
+    padding-left: 10px!important;
+}
