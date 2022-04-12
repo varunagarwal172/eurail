@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: $theme-color;
+    color: $default-content-color;
+    font-size: $regular-font-size;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-body {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.main-heading {
+    font-size: $medium-font-size;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-none {
+    float: none;
+}
+
+.loading {
+    text-align: center;
+    font-size: $medium-font-size;
+}
+
+.empty-state {
+    text-align: center;
+    font-size: $medium-font-size;
+    padding: 20px 0;
+}
+
+.card {
+    box-shadow: inset 0 0 15px $box-shadow;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: $tabs-bg-color;
+    cursor: default;
+    z-index: 1;
+
+    .ribbon {
+        position: absolute;
+        right: 10px;
+        top: -3px;
+        background-color: red;
+        color: #ffffff;
+        padding: 5px;
+        border-radius: 3px;
+        font-size: $small-font-size;
+        writing-mode: vertical-rl;
+        white-space: nowrap;
+    }
+}
+
+.close-icon {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: 10px;
+    left: 15px;
+    cursor: pointer;
+    transition: ease all .3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:before, &:after {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 15px;
+        position: absolute;
+        background-color: $light-content-color;
+    }
+
+    &:before {
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+.no-select {
+    user-select: none;
+}

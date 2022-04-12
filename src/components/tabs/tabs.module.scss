@@ -1,0 +1,45 @@
+@import "./src/style/variable";
+.tabs {
+    overflow: hidden;
+    overflow-x: overlay;
+    height: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    white-space: nowrap;
+    display: flex;
+    background-color: $theme-color;
+
+    .tab-item {
+        flex: 1;
+        min-width: 35px;
+        padding: 0 5px;
+        border: 1px solid $tabs-border-color;
+        line-height: 30px;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        border-left: 0;
+        position: relative;
+        text-align: left;
+        background-color: $tabs-bg-color;
+        cursor: pointer;
+
+        &.active {
+            box-shadow: inset 0 5px 9px -7px $box-shadow;
+            opacity: 1;
+            font-weight: 600;
+        }
+
+        &[disabled] {
+            cursor: not-allowed;
+        }
+
+        .records-no {
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            line-height: 10px;
+            font-size: $tiny-font-size;
+        }
+    }
+}
